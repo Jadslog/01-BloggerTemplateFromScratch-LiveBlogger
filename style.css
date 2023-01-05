@@ -184,3 +184,60 @@ h2::after {
     padding: 4px 20px;
     margin-bottom: 20px;
 }
+
+/* Popular Post */
+
+.popular-post-container {
+    box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    margin-top: 100px;
+}
+
+.popular-post-container .popular-posts {
+    display: flex;
+}
+
+.popular-post .thumbnail img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.popular-post {
+    margin: 0 8px;
+}
+
+.popular-post h3.title {
+    font-family: "Dancing Script", cursive;
+    font-size: 26px;
+    margin-top: 16px;
+
+}
+
+/* Contact Us Section */
+
+.contact-container {
+    margin-top: 100px;
+    box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container form input[type="text"],
+.contact-container form textarea {
+    padding: 8px 24px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+}
+
+.contact-container form input[type="submit"] {
+    background: #06f0ff;
+    width: 150px;
+    padding: 8px 24px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
