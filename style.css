@@ -373,3 +373,127 @@ footer .footer-right p {
     font-weight: bold;
 
 }
+
+/* Hiiden Items */
+
+.mobile-menu-icon {
+    display: none;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 600px) {
+   
+    /* Top Nav */
+
+    .top-nav nav,
+    .top-nav .search-icon,
+    .top-nav .search-container {
+        display: none;
+    }
+
+    .wrapper {
+        width:100%;
+        padding: 0 16px;
+    }
+
+    .top-nav .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    /* Header */
+    .header-wrapper {
+        width: 100;
+        overflow: hidden;
+    }
+
+    .header-wrapper .hero {
+        display: block;
+        height: 100vh;
+        position: relative;
+    }
+
+    .header-wrapper .hero .hero-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100px;
+    }
+
+    .header-wrapper .hero .hero-left {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 32px;
+    }
+
+    .header-wrapper .hero h1.main-heading {
+        font-size: 48px;
+        margin-bottom: 12px;
+    }
+
+    .header-wrapper a.btn {
+        width: 160px;
+        text-align: center;
+    
+    }
+
+    /* Blog Posts */
+
+    .posts-wrapper .blogpost-card .thumbnail-image > img {
+        height: 200px;
+    }
+
+    h3.post-title {
+        font-size: 32px;
+        margin-top: 24px;
+    }
+
+    /* Popular Section */
+
+    .popular-post-container {
+        box-shadow: unset;
+        padding: 16px;
+    }
+
+    .popular-post-container .popular-posts {
+        flex-direction: column;
+    }
+
+    .popular-posts .popular-post {
+        margin: 16px 0;
+    }
+
+    /* Contact Us */
+
+    .contact-container {
+        box-shadow: unset;
+        padding: 16px;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container .footer-center {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .footer-container .footer-right {
+        text-align: center;
+    }
+
+    .footer-container .footer-right .social-icons {
+        margin: 20px auto;
+        margin-bottom: 60px;
+    }
+}
