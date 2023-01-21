@@ -376,7 +376,9 @@ footer .footer-right p {
 
 /* Hiiden Items */
 
-.mobile-menu-icon {
+.mobile-menu-icon,
+.mobile-menu-container,
+.menu-close-icon {
     display: none;
 }
 
@@ -495,5 +497,54 @@ footer .footer-right p {
     .footer-container .footer-right .social-icons {
         margin: 20px auto;
         margin-bottom: 60px;
+    }
+
+    /* Mobile Navigation */
+
+    .top-nav .mobile-menu-container {
+        display: flex;
+        position: fixed;
+        background: #222;
+        height: 100vh;
+        z-index: 200;
+        left: 0;
+        right: 0;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: 500ms cubic-bezier(0.03, 0.95, 0.11, 1.09);
+    }
+
+    .top-nav .mobile-menu-container.active {
+        opacity: 1;
+        pointer-events: auto;
+        top: 0;
+    }
+
+    .top-nav .mobile-menu-container ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .top-nav .mobile-menu-container ul li {
+        margin: 16px 0;
+    }
+
+    .top-nav .mobile-menu-container ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .top-nav .menu-close-icon {
+        display: flex;
+        z-index: 300;
+        cursor: pointer;
+        padding: 16px;
+        background: #000;
+        border-radius: 50%;
+        margin: 4px;
     }
 }
