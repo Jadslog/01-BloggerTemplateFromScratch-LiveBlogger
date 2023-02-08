@@ -538,7 +538,7 @@ footer .footer-right p {
         font-size: 20px;
     }
 
-    .top-nav .menu-close-icon {
+    .top-nav .mobile-menu-container.active + .menu-close-icon {
         display: flex;
         z-index: 300;
         cursor: pointer;
